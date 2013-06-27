@@ -52,9 +52,9 @@
     var top = offset.top;
 
     if (top + $element.height() >= window_top &&
-        top - ($element.data('appear-top-offset') || 0) <= window_top + $window.height() &&
+        top - ($element.data('appear-top-offset') || 0) <= window_top + screen.height &&
         left + $element.width() >= window_left &&
-        left - ($element.data('appear-left-offset') || 0) <= window_left + $window.width()) {
+        left - ($element.data('appear-left-offset') || 0) <= window_left + screen.width) {
       return true;
     } else {
       return false;
